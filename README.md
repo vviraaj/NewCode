@@ -20,17 +20,39 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## login page
+login page with the username and password fields
+it will check the username and password with the sample data if both match then user can login 
+if anything is wrong then the toast will show the mesage of incorrect
+the userdata will store on sessionstorage for more use
 
-To learn more about Next.js, take a look at the following resources:
+## React tostify library is used to show the toast
+toast will show the error and success message accordingly
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Dashboard 
+Dashboard  header  include the company logo , Toggle button , login and logout as per user
+    1.) Company logo is used to get back to dashboard again
+    2.) Dark Mode toggle button is used to switch between dark and normal mode
+    3.) User logo is used to get the user details
+    4.) login and logout is used as per if the user is login or not 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Dashboard include the result of the open weather api in the left card depending on the user location
+    1.) it includes city name ,Temperature , weather description ,wind speed
+    2.) it will change the color accordingly as per the tempaerture like white when the temp is below 10 or when temp is above 40  it will show dark orange
 
-## Deploy on Vercel
+## user details
+header includes the user icon which will navigate to user details
+user details includes the username, usercity , name info and some default user image
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Dark Mode toogle button
+Context api is used here to switch the changes accordingly to the component
+it will toggle the color from dark to normal 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+
+
+
+
