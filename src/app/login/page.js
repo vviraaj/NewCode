@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Image from "next/image";
 import logo from "@/Svgs/logo.svg";
 import login from "@/Svgs/login.png";
-import userDatas from "@/app/Component/data.json";
+import userDatas from "@/app/Component/Data.json";
 import { useRouter } from "next/navigation";
 
 export default function Example() {
